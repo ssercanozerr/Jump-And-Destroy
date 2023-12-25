@@ -13,11 +13,11 @@ public class LaserMovementScript : MonoBehaviour
         playerBehaviourScript = FindObjectOfType<PlayerBehaviourScript>();
         if (playerBehaviourScript.isTurnLeft)
         {
-            rb.velocity = -transform.right * speed * Time.deltaTime;
+            rb.velocity = -transform.right * speed;
         }
         else
         {
-            rb.velocity = transform.right * speed * Time.deltaTime;
+            rb.velocity = transform.right * speed;
         }
     }
 

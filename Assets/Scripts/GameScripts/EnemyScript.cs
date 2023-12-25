@@ -14,7 +14,7 @@ public class EnemyScript : MonoBehaviour
         startPosition = transform.position;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         Move();
     }
